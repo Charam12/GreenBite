@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.body-container {
+    display: block;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 6%;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #333;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav-links {
+    text-align: right;
+    display: flex;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: #333;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.banner {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://cdn.pic.in.th/file/picinth/5565368.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .img img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #333;
+}
+
+.content {
+    margin: auto;
+    padding: 0 8%;
+}
+
+.content .Header {
+    font-size: 3rem;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content p {
+    font-size: 15px;
+}
+
+.product {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+}
+
+.product-info {
+    padding: 8% 0;
+    display: block;
+}
+
+.product-name {
+    font-size: 2rem;
+}
+
+.product .product-img {
+    height: 400px;
+}
+
+.product-description {
+    margin: 3% 0;
+    font-size: 18px;
+}
+
+@media(max-width:400px) {
+    .nav-links ul li a {
+        font-size: 12px;
+    }
+    .nav img {
+        height: 20px;
+    }
+}
